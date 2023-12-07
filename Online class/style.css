@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000df;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fba300c9;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+}
+
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/data-analyst.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg h1{
+    text-align: center;
+    font-family: poppins,sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    transition: .5s;
+}
+
+nav h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* nav.green{
+    background: green;
+} */
+nav button {
+    padding: 10px 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid orange;
+    outline: none;
+    background: none;
+    transition: transform .5s;
+    font-family: poppins, sans-serif;
+}
+
+.nav button:hover {
+    transform: scale(1.1);
+}
+
+.nav button:hover {
+    color: orange !;
+}
+.menu-bar{
+    display: none;
+}
+.nav button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.middle {
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: .3;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.middle h1,
+p,
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.middle a {
+    border: 1px solid orange;
+    padding: 15px 40px;
+    transition: background-color .5s;
+    width: 0px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.middle a:hover {
+    color: aliceblue;
+    background-color: orange;
+    width: 100%;
+}
+
+.middle p {
+    margin-bottom: 30px;
+}
+
+.courses h1 {
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 9%;
+    padding-bottom: 150px;
+}
+
+.flex-container {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.303);
+    cursor: pointer;
+    position: relative;
+}
+
+.heading p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 40px;
+}
+
+.heading hr {
+    background: orange;
+    color: orange;
+    width: 80px;
+    position: absolute;
+    left: 44.5%;
+    padding-bottom: 2px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    transition: width .5s;
+}
+
+.heading p:hover+hr {
+    width: 150px;
+}
+
+.bg .fixed svg {
+    color: aliceblue;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    background: orange;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    position: fixed;
+}
+.bg .arrow svg{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: orange;
+    animation: down 2s linear infinite;
+}
+@keyframes down {
+    10%{
+        top: 83%;
+    }
+    50%{
+        top: 84%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+.bg .arrow p{
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    font-family: poppins;
+}
+.flex-container img {
+    width: 70px;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+
+}
+
+.flex-container p {
+    padding-top: 120px;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.animate-border {
+    border: 1px solid greenyellow;
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.animate-border p {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 65px;
+}
+
+.flex-border {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* testimonial */
+.content-wrapper .card {
+    width: 60%;
+    min-height: 70vh;
+    margin: auto;
+    border: 1px solid orange;
+}
+
+/* About-sec */
+.About-sec h1 {
+    text-align: center;
+    color: white;
+    font-family: poppins, sans-serif;
+}
+.About-sec p{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: poppins,sans-serif;
+    font-size: 20px;
+}
+
+/* contact-sec */
+.contact-sec h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: poppins, sans-serif;
+    padding-bottom: 50px;
+}
+
+/* input-sec */
+
+.input-sec{
+    padding: 0 35%;
+}
+
+.input-sec .inputs input {
+    width: 400px;
+    height: 50px;
+    margin: 30px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid orange;
+    color: orange;
+    text-align: center;
+
+}
+
+.input-sec .inputs input::placeholder {
+    text-align: center;
+    color: orange;
+    font-family: poppins, sans-serif;
+}
+
+.input-sec .inputs textarea {
+    width: 400px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid orange;
+    color: orange;
+    resize: none;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.input-sec .inputs textarea::placeholder {
+    text-align: center;   
+    color: orange;
+    font-family: poppins, sans-serif;
+}
+
+.input-sec .inputs button {
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid orange;
+    outline: none;
+    background: none;
+    transition: transform .5s;
+    font-family: poppins, sans-serif;
+
+}
+
+
+
+.input-sec .inputs button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between each navigation link */
+    }
+
+    nav button {
+        margin-top: 20px; /* Add space between navigation links and buttons */
+    }
+}
+@media (max-width: 768px) {
+    .input-sec {
+        padding: 0 10%; /* Reduce the padding on smaller screens */
+    }
+
+    .input-sec .inputs input,
+    .input-sec .inputs textarea {
+        width: 100%; /* Make input fields and textarea full width on smaller screens */
+    }
+    .menu-bar {
+        position: absolute;
+        top: 10px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        font-size: 24px; /* Adjust the font size as needed */
+        cursor: pointer;
+    }
+    /* Add this to your CSS file */
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position to align with the menu bar */
+    right: 20px; /* Adjust the right position if needed */
+    background-color: #333; /* Background color for the dropdown */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style individual menu items */
+nav ul.active li {
+    margin: 10px 0;
+}
+
+/* Hide the navigation links by default */
+nav ul {
+    display: none;
+}
+/* Add this to your CSS file */
+nav ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initially position it outside the viewport */
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Background color for the dropdown */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure the navigation is in front of other content */
+    transition: left 0.5s ease; /* Add a smooth leftward transition */
+}
+
+nav ul.active {
+    left: 0; /* Slide in from the left when active */
+}
+/* Add this to your CSS file */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+/* Add this to your CSS file */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Additional styles to display the icon when the menu is active */
+nav ul.active + #menuIcon {
+    display: block;
+}
+
+}
